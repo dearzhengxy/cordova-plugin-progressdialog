@@ -1,4 +1,4 @@
-pDialog - A Native Android Progress Dialog Plugin for Cordova
+xyDialog - A Native Android Progress Dialog Plugin for Cordova
 ======================
 
 Requirements
