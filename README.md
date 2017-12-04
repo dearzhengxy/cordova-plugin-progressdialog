@@ -1,4 +1,4 @@
-xyDialog - A Native Android Progress Dialog Plugin for Cordova
+progressDialog - A Native Android Progress Dialog Plugin for Cordova
 ======================
 
 Requirements
@@ -8,13 +8,13 @@ Requirements
 
 Installation
 -------------
-    cordova plugin add cordova-plugin-xydialog
+    cordova plugin add cordova-plugin-progressdialog
     
 Simple Usage
 -------------
 show:
 
-    cordova.plugin.xyDialog.init({
+    cordova.plugin.progressDialog.init({
         theme : 'HOLO_DARK',
         progressStyle : 'SPINNER',
         cancelable : true,
@@ -25,7 +25,7 @@ show:
 
 dismiss:
 
-    cordova.plugin.xyDialog.dismiss();
+    cordova.plugin.progressDialog.dismiss();
 
 
 Functions
@@ -51,7 +51,7 @@ These are the valid options:
 
 `autoHide`:can hide automatically
 
-    cordova.plugin.xyDialog.init({
+    cordova.plugin.progressDialog.init({
         theme : 'HOLO_DARK',
         progressStyle : 'SPINNER',
         cancelable : true,
@@ -64,14 +64,14 @@ These are the valid options:
 
 Dismiss the progress dialog.
 
-    cordova.plugin.xyDialog.dismiss();
+    cordova.plugin.progressDialog.dismiss();
 
 ###.setProgress(_int_)
 
 Set the value of the progress bar when progressStyle is `HORIZONTAL`.
     
-    cordova.plugin.xyDialog.init({progressStyle : 'HORIZONTAL', title: 'Please Wait...', message : 'Connecting to server...'});
-    cordova.plugin.xyDialog.setProgress(25);
+    cordova.plugin.progressDialog.init({progressStyle : 'HORIZONTAL', title: 'Please Wait...', message : 'Connecting to server...'});
+    cordova.plugin.progressDialog.setProgress(25);
     
 ![pDialog2](http://i.imgur.com/7k2docz.png)
 
@@ -80,19 +80,19 @@ Set the value of the progress bar when progressStyle is `HORIZONTAL`.
 
 Set the title of the progress dialog.
     
-    cordova.plugin.xyDialog.setTitle('Please Wait...');
+    cordova.plugin.progressDialog.setTitle('Please Wait...');
     
 ###.setMessage(_message_)
 
 Set the message of the progress dialog
 
-    cordova.plugin.xyDialog.setMessage('Connecting to server...');   
+    cordova.plugin.progressDialog.setMessage('Connecting to server...');   
     
 ###.setCancelable(_boolean_)
 
 Set whether the progress dialog is calncelable or not (defaults to `true`)
 
-    cordova.plugin.xyDialog.setCancelable(false); // The user can not cancel the progress dialog  
+    cordova.plugin.progressDialog.setCancelable(false); // The user can not cancel the progress dialog  
     
 
 Chaining The Functions
@@ -100,7 +100,7 @@ Chaining The Functions
 
 It is also possible to chain the functions instead of calling them one by one.
 
-    cordova.plugin.xyDialog.init({
+    cordova.plugin.progressDialog.init({
         theme: 'HOLO_DARK',
         title: 'Please Wait...',
         message : 'Connecting to server1...',
