@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android" id="cordova-plugin-xydialog" version="2.0.1">
+    <name>XYDialog</name>
+    <description>An Android Progress Dialog Plugin for Cordova.</description>
+    <license>MIT</license>
+    <engines>
+        <engine name="cordova" version=">=3.0.0" />
+    </engines>
+    <js-module src="www/plugins.XYDialog.js" name="XYDialog">
+        <clobbers target="cordova.plugin.xyDialog" />
+    </js-module>
+    <!-- Android -->
+    <platform name="android">
+        <source-file src="src/android/XYDialog.java" target-dir="src/org/apache/cordova/xydialog" />
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="XYDialog">
+                <param name="android-package" value="org.apache.cordova.xydialog.XYDialog" />
+            </feature>
+        </config-file>
+    </platform>
+</plugin>
