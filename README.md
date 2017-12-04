@@ -49,6 +49,8 @@ These are the valid options:
 
 `message`: contents of the progress dialog (defaults to empty)
 
+`autoHide`:can hide automatically
+
     cordova.plugin.xyDialog.init({
         theme : 'HOLO_DARK',
         progressStyle : 'SPINNER',
@@ -102,7 +104,8 @@ It is also possible to chain the functions instead of calling them one by one.
         theme: 'HOLO_DARK',
         title: 'Please Wait...',
         message : 'Connecting to server1...',
-        progressStyle: 'HORIZONTAL'
+        progressStyle: 'HORIZONTAL',
+        autoHide:3000
     })
     .setProgress(25)
     .setMessage('Connecting to server2...');
