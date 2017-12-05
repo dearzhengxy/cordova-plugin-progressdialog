@@ -1,20 +1,23 @@
 {
-  "name": "cordova-plugin-xydialog",
+  "name": "cordova-plugin-progressdialog",
   "version": "2.0.1",
   "description": "An Android Progress Dialog Plugin for Cordova",
   "cordova": {
-    "id": "cordova-plugin-xydialog",
+    "id": "cordova-plugin-progressdialog",
     "platforms": [
       "android"
     ]
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/pwlin/cordova-plugin-pdialog.git"
+    "url": "https://github.com/bluebulesky/cordova-plugin-progressdialog.git"
   },
   "keywords": [
     "ecosystem:cordova",
-    "cordova-android"
+    "cordova-android",
+    "progress",
+    "indicator",
+    "loading"
   ],
   "engines": [
     {
@@ -22,12 +25,17 @@
       "version": ">=3.0.0"
     }
   ],
-  "author": {
-    "name": "bluebluesky"
-  },
+  "author": "bluebluesky",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/pwlin/cordova-plugin-pdialog/issues"
+    "url": "https://github.com/bluebulesky/cordova-plugin-progressdialog/issues"
   },
-  "homepage": "https://github.com/pwlin/cordova-plugin-pdialog#readme"
+  "homepage": "https://github.com/bluebulesky/cordova-plugin-progressdialog",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "user": "0.0.0"
+  }
 }
