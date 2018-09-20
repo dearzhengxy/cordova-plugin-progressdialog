@@ -1,17 +1,53 @@
 {
-  "name": "cordova-plugin-progressdialog",
-  "version": "2.0.1",
-  "description": "An Android Progress Dialog Plugin for Cordova",
+  "_from": "cordova-plugin-progressdialog@^2.0.2",
+  "_id": "cordova-plugin-progressdialog@2.0.2",
+  "_inBundle": false,
+  "_integrity": "sha512-WHNpJlPt9huEpv7xHzwOxfS3RKzkyn+8+s6XPjU1our23sdEGUgxzRcLNzrt3wiU5OZi173yoy95SrUh5Hbwkg==",
+  "_location": "/cordova-plugin-progressdialog",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "cordova-plugin-progressdialog@^2.0.2",
+    "name": "cordova-plugin-progressdialog",
+    "escapedName": "cordova-plugin-progressdialog",
+    "rawSpec": "^2.0.2",
+    "saveSpec": null,
+    "fetchSpec": "^2.0.2"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/cordova-plugin-progressdialog/-/cordova-plugin-progressdialog-2.0.2.tgz",
+  "_shasum": "711b6912151c7cc942e72d5ad2b96bfa999dcc17",
+  "_spec": "cordova-plugin-progressdialog@^2.0.2",
+  "_where": "/Users/mac005/silverwalletapp",
+  "author": {
+    "name": "bluebluesky"
+  },
+  "bugs": {
+    "url": "https://github.com/bluebulesky/cordova-plugin-progressdialog/issues"
+  },
+  "bundleDependencies": false,
   "cordova": {
     "id": "cordova-plugin-progressdialog",
     "platforms": [
       "android"
     ]
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/bluebulesky/cordova-plugin-progressdialog.git"
+  "dependencies": {
+    "user": "0.0.0"
   },
+  "deprecated": false,
+  "description": "An Android Progress Dialog Plugin for Cordova",
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=3.0.0"
+    }
+  ],
+  "homepage": "https://github.com/bluebulesky/cordova-plugin-progressdialog",
   "keywords": [
     "ecosystem:cordova",
     "cordova-android",
@@ -19,23 +55,15 @@
     "indicator",
     "loading"
   ],
-  "engines": [
-    {
-      "name": "cordova",
-      "version": ">=3.0.0"
-    }
-  ],
-  "author": "bluebluesky",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/bluebulesky/cordova-plugin-progressdialog/issues"
-  },
-  "homepage": "https://github.com/bluebulesky/cordova-plugin-progressdialog",
   "main": "index.js",
+  "name": "cordova-plugin-progressdialog",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bluebulesky/cordova-plugin-progressdialog.git"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "dependencies": {
-    "user": "0.0.0"
-  }
+  "version": "2.0.2"
 }

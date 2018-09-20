@@ -200,6 +200,10 @@ public class XYDialog extends CordovaPlugin {
 	 * Dismiss the progress dialog
 	 */
 	private void dismiss() {
+
+		if (XYDialog.pDialogObj==null)
+			return;
+		
 		Runnable runnable = new Runnable() {
 			@Override
 			public void run() {
