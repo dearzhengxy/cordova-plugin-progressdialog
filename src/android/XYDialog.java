@@ -94,26 +94,7 @@ public class XYDialog extends CordovaPlugin {
 					// e.printStackTrace();
 				}
 
-				int theme = 5; // ProgressDialog.THEME_DEVICE_DEFAULT_LIGHT
-				if (argsObj.has("theme")) {
-					String themeArg = null;
-					try {
-						themeArg = argsObj.getString("theme");
-					} catch (JSONException e) {
-						// e.printStackTrace();
-					}
-					if ("TRADITIONAL".equals(themeArg)) {
-						theme = 1; // ProgressDialog.THEME_TRADITIONAL
-					} else if ("DEVICE_DARK".equals(themeArg)) {
-						theme = 4; // ProgressDialog.THEME_DEVICE_DEFAULT_DARK
-					}
-					if ("HOLO_DARK".equals(themeArg)) {
-						theme = 2; // ProgressDialog.THEME_HOLO_DARK
-					}
-					if ("HOLO_LIGHT".equals(themeArg)) {
-						theme = 3; // ProgressDialog.THEME_HOLO_LIGHT
-					}
-				}
+				int theme = argsObj.optInt("theme", 5); // ProgressDialog.THEME_DEVICE_DEFAULT_LIGHT
 
 				int style = ProgressDialog.STYLE_SPINNER;
 				if (argsObj.has("progressStyle")) {
